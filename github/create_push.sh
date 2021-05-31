@@ -1,6 +1,6 @@
 #!/bin/bash
 # define varaibles
-base_path=/home/dev/ahmedashrafdevv/side_projects/shells/github/
+base_path=$SHELLS_PATH/github
 token=$GITHUB_TOKEN
 name=${1##*/}
 org=$2
