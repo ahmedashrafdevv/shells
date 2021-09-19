@@ -5,13 +5,13 @@ token=$GITHUB_TOKEN
 name=${1##*/}
 org=$2
 echo $name
-branches=(locale staging production)
+branches=(master)
 current=$branches
 
 
-$base_path/helpers/create_repo.sh "$name" "$token" "$org"
-$base_path/helpers/init_repo.sh "$name" "$current" "$org"
-$base_path/helpers/create_branches.sh "${branches[@]/$current}"
+/home/dev/ahmedashrafdevv/side_projects/shells/github/helpers/create_repo.sh "$name" "$token" "$org"
+/home/dev/ahmedashrafdevv/side_projects/shells/github/helpers/init_repo.sh "$name" "$current" "$org"
+/home/dev/ahmedashrafdevv/side_projects/shells/github/helpers/create_branches.sh "${branches[@]/$current}"
 
 
 
